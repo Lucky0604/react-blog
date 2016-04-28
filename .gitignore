@@ -1,0 +1,29 @@
+# 包
+/node_modules
+
+# webstorm配置
+.idea
+
+# mac cache
+.DS_Store
+
+# sass编译map
+*.map
+
+# npm
+npm-debug.log
+
+# data
+/be/data
+
+
+# github ignore
+/resource/test
+/resource/api
+/resource/demo
+/resource/upload
+/resource/static/dist
+/be/config/prod.js
+/fe/src/config/prod.js
+/bin/scp.dev.sh
+webpack-assets.json
