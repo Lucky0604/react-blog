@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function(Schema) {
     return {
         article: {
             id: Schema.Types.ObjectId,

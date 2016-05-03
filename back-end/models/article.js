@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function(Schema) {
     return {
         title: String,
         author: String,

@@ -7,7 +7,7 @@ var path = require('path'),
             keys: ["Lucky's blog"]
         },
         db: {       // 数据库配置
-            uri: 'mongodb: //localhost:27017/blog',
+            uri: 'mongodb://localhost:27017/blog',
             opts: {
                 user: '',
                 pass: ''
