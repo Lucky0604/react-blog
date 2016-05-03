@@ -20,7 +20,7 @@ module.exports = function(app, co) {
                         articleTags: articleTags
                     }
                 });
-            }).catch(F.handlerErr.bind(null, res))
+            }).catch(F.handleErr.bind(null, res))
         })
         // 删除文章
     .delete(function(req, res) {
@@ -34,7 +34,7 @@ module.exports = function(app, co) {
                 status: 'fail',
                 msg: '删除失败！'
             });
-        }).catch(F.handlerErr.bind(null, res))
+        }).catch(F.handleErr.bind(null, res))
     })
     // 更新文章
     .put(function(req, res) {
@@ -49,7 +49,7 @@ module.exports = function(app, co) {
                 status: 'fail',
                 msg: '更新失败！'
             });
-        }).catch(F.handlerErr.bind(null, res))
+        }).catch(F.handleErr.bind(null, res))
     })
     // 发表文章
     .post(function(req, res) {
@@ -64,6 +64,6 @@ module.exports = function(app, co) {
                 status: 'fail',
                 msg: '新增失败！'
             });
-        }).catch(F.handlerErr.bind(null, res))
+        }).catch(F.handleErr.bind(null, res))
     })
 };

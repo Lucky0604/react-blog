@@ -44,6 +44,6 @@ module.exports = function(app, co) {
                         }
                     });
                 }
-            }).catch(F.handlerErr.bind(null, res))
+            }).catch(F.handleErr.bind(null, res))
         })
 }
