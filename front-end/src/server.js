@@ -29,7 +29,7 @@ app.use(favicon(path.join(resourceDir, 'static/images/favicon.ico')));
 app.use(express.static(resourceDir, {maxAge: '365d'}));
 
 const proxy = httpProxy.createProxyServer({
-    target: 'http://' + envConfig[__DEVELOPMENT__? 'dev': 'prod'].apiServer.host + ':' + envConfig[__DEVELOPMENT__?'dev': 'prod'].apiServer.port
+    target: 'http://' + envConfig[__DEVELOPMENT__? 'dev': 'prod'].apiServer.host + ':' + envConfig[__DEVELOPMENT__?'dev': 'prod'].apiServer.port,
     ws: true
 });
 
