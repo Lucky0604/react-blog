@@ -40,7 +40,7 @@ export default class PageList extends Component {
             }
             pagelistComponent.push(<span key={current}
                 className="active">{current}</span>
-            );
+            )
             while (j < numRange) {
                 if (pageNumNext < pageCount) {
                     pagelistComponent.push(<Link key={pageNumNext} to={path}
